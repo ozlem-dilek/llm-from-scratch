@@ -20,7 +20,7 @@ learning_rate = 6e-4
 min_lr = 6e-5
 warmup_iters = 2000
 
-device = "cpu"
+device = "cuda"
 dtype = torch.bfloat16 if torch.cuda.is_bf16_supported() else torch.float16
 torch.backends.cuda.matmul.allow_tf32 = True
 
